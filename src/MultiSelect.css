@@ -1,0 +1,224 @@
+.multi-select-container {
+	display: flex;
+	flex-direction: column;
+}
+.multi-select-container .multi-select-placeholder {
+	cursor: default;
+	background: transparent;
+	border: none;
+}
+.multi-select-container .multi-select-placeholder::placeholder {
+	color: #999999;
+}
+.multi-select-container .multi-select-placeholder:focus {
+	outline: none;
+}
+.multi-select-container .multi-select-borderless {
+	border: none !important;
+}
+.multi-select-container .multi-select-disabled {
+	background: #EEE;
+	color: #999;
+	cursor: not-allowed;
+}
+.multi-select-container .multi-select-disabled:hover {
+	border-color: #CCC !important;
+}
+.multi-select-container .multi-select-disabled input {
+	cursor: not-allowed;
+}
+.multi-select-container .multi-select-disabled .multi-select-arrow {
+	cursor: not-allowed;
+}
+.multi-select-container .multi-select-label {
+	color: grey;
+	font-size: 0.8rem;
+	margin-left: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+.multi-select-container .multi-select-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.multi-select-container .multi-select-menu .multi-select-menu-closed {
+	display: flex;
+	flex-grow: 1;
+	overflow: hidden;
+}
+.multi-select-container .multi-select-menu .multi-select-menu-closed .multi-select-placeholder {
+	flex-grow: 1;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area-closed {
+	display: flex;
+	flex-grow: 1;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area-closed .multi-select-placeholder {
+	flex-grow: 1;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area-closed .select-value {
+	display: flex;
+	border-radius: 0.2rem;
+	padding: 0.3rem;
+	margin-right: 0.3rem;
+	margin-top: 0.3rem;
+	background: #F6F9FE;
+	white-space: nowrap;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area-closed .select-value .Select-value-icon {
+	cursor: pointer;
+	margin-left: 0.3rem;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 9999;
+	position: absolute;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area .select-value {
+	display: flex;
+	border-radius: 0.2rem;
+	padding: 0.3rem;
+	margin-right: 0.3rem;
+	margin-top: 0.3rem;
+	background: #F6F9FE;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area .select-value .Select-value-icon {
+	cursor: pointer;
+	margin-left: 0.3rem;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area .multi-select-auto-input {
+	display: flex !important;
+	align-items: center;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area .multi-select-auto-input input {
+	border: none !important;
+}
+.multi-select-container .multi-select-menu .multi-select-input-area .multi-select-auto-input input:focus {
+	outline: none;
+}
+.multi-select-container .multi-select-menu .multi-select-icons {
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+}
+.multi-select-container .multi-select-input {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background: white;
+}
+.multi-select-container .multi-select-input .multi-select-input-area {
+	display: flex;
+	overflow-y: auto;
+	flex-wrap: wrap;
+}
+.multi-select-container .multi-select-input .multi-select-input-area .select-value {
+	display: flex;
+	border-radius: 0.2rem;
+	padding: 0.3rem;
+	margin-right: 0.3rem;
+	margin-top: 0.3rem;
+	background: #F6F9FE;
+}
+.multi-select-container .multi-select-input .multi-select-input-area .select-value .Select-value-icon {
+	cursor: pointer;
+	margin-left: 0.3rem;
+}
+.multi-select-container .multi-select-input .multi-select-input-area .multi-select-auto-input {
+	display: flex !important;
+	align-items: center;
+}
+.multi-select-container .multi-select-input .multi-select-input-area .multi-select-auto-input input {
+	border: none !important;
+}
+.multi-select-container .multi-select-input .multi-select-input-area .multi-select-auto-input input:focus {
+	outline: none;
+}
+.multi-select-container .multi-select-input .multi-select-icons {
+	display: flex;
+	align-items: center;
+}
+.multi-select-container .multi-select-clear {
+	cursor: pointer;
+	color: #999;
+	padding: 3px;
+}
+.multi-select-container .multi-select-clear.hidden {
+	visibility: hidden;
+}
+.multi-select-container .multi-select-arrow {
+	cursor: pointer;
+	font-size: 9px;
+	color: #999;
+	padding: 3px;
+}
+.multi-select-container .multi-select-up {
+	position: absolute;
+	bottom: 100%;
+}
+.multi-select-container .multi-select-option-container {
+	margin-top: 3px;
+	background-color: white;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0 0px 4px #d9d9d9;
+	border-radius: 4px;
+	box-sizing: border-box;
+	z-index: 9999;
+	outline: none;
+}
+.multi-select-container .multi-select-option-container .multi-select-info-container {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.multi-select-container .multi-select-option-container .multi-select-info-container .multi-select-all-btn {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+	background: #EEE;
+	color: grey;
+}
+.multi-select-container .multi-select-option-container .multi-select-info-container .multi-select-all-btn.multi-select-all-btn-selected .ant-checkbox-inner {
+	border-color: white !important;
+}
+.multi-select-container .multi-select-option-container .multi-select-info-container .multi-select-info {
+	margin-left: 1rem;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container {
+	overflow: auto;
+	max-height: 180;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container .multi-select-option {
+	display: flex;
+	align-items: center;
+	flex: 1 1 auto;
+	padding: 2px;
+	cursor: pointer;
+}
+.multi-select-option:hover {
+	background-color: #EEE;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container .multi-select-option.multi-select-option-focused .multi-select-checkbox .ant-checkbox-inner {
+	border-color: white !important;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container .multi-select-option.multi-select-disabled {
+	background: #EEE;
+	color: #999;
+	cursor: not-allowed;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container .multi-select-option .multi-select-option-component {
+	padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.multi-select-container .multi-select-option-container .multi-select-options-container .multi-select-option .multi-select-checkbox {
+	margin-left: 0.5rem;
+}
